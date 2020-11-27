@@ -21,10 +21,9 @@ const DockDetail = (props) => {
                 await response.data.map((data)=>{
                     me_Data.push({
                         id : data[0],
-                        name : data[1],
-                        detail : data[2],
-                        hour : data[5],
-                        measure : data[6]
+                        hour : data[4],
+                        measure : data[5],
+                        predict : data[6]
                     })
                     if (building_name!=data[1]){
                         building_name=data[1]
@@ -52,7 +51,7 @@ const DockDetail = (props) => {
             <div id="buildingName">
                 <h1>Marker_ID : {nowMarker}</h1>
                 <DetailName building={building}/>
-                <DetailGraph />
+                <DetailGraph measure={measure}/>
                 <DetailToday />
             </div>
         </div>

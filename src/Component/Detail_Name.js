@@ -9,7 +9,7 @@ const DetailName = (props) => {
         }
     },[building])
     const divStyle = {
-        backgroundColor : "lightGreen"
+        backgroundColor : "lightGrey"
     }
     return (
         <div style={divStyle}>

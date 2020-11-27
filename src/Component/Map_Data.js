@@ -20,7 +20,7 @@ class Map_data extends Component{
             fluid: true,
             customAnimation: false,
             slow: false,
-            size: 0.25
+            size: 0.35
         };
     }
     onClickVisible = () => {
@@ -87,6 +87,7 @@ class Map_data extends Component{
                 <Dock 
                   id = "dock_bar"
                   position={this.state.positions}
+                  size={this.state.size}
                   dimMode={this.state.dimModes}
                   isVisible = {this.state.isVisible}
                   onVisibleChange = {this.onClickVisible}
